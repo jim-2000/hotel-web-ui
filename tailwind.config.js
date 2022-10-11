@@ -48,6 +48,8 @@ module.exports = {
         'green': '#00bf8f',
         'gray': '#3E3C3C',
         'linear': 'linear-gradient(to right, #00bf8f, #001510)',        
+        'lgray': 'linear-gradient(to right, #4F4F4F, #3E3C3C)',        
+        'lmain': 'linear-gradient(to right, #9B51E0, #9B5190)',        
       },
       dropShadow: {
         primary: '0 20px 40px rgba(238, 77, 71, 0.1)',

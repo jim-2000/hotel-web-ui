@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/common/Header'
 import HeroSection from '../components/common/Hero'
 import FacilitiesCard from '../components/facilities/facilitiesCard'
+import AboutHotel from '../components/home/aboutHotel'
 
 const Facilities = () => {
   return (
@@ -42,18 +43,25 @@ const Facilities = () => {
                 <p className='text-text text-sm font-bold'>Neccessities for babies and chidren</p>
             </div>
         </div>
-        <div className='container py-3 bg-[rgba(0,0,0,0.25)]'>
-            <div className='flex flex-col md:flex-row justify-between md:items-center items-stretch'>
-                <div className='py-3 md:py-0 '>
-                    {/* <h5 className='font-bold text-white text-xl text-center'>Request for  New <span  className='text-text font-body text-2xl ml-5'>Facilities</span> </h5> */}
-                      <h1 className='text-center section-title text-xl '><span className=''>Request</span>For new Facilities</h1>
+      <div>
+        <div class="divider">
+          <span></span>
+          <span>Request For new Facilities</span>
+          <span></span>
+        </div>
+      </div>
+ 
+        <div className='bg-lmain py-3'>
+            <div className='container flex flex-col md:flex-row justify-between  items-center'>
+                <div className='py-3 md:py-0 md:w-1/2 w-full '>                   
+                      <AboutHotel />
                 </div>
                 
-                  <form className=' md:w-96 w-full'>
-                    <div className='flex flex-col   drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] p-3'>                                        
-                        <input type="email" name="email" id="email" class="bg-gray-50   text-text text-sm rounded outline-none w-full p-2.5 my-1 focus:px-3" placeholder="name@company.com" required />  
-                        <textarea type="text" name="email" id="email" class="bg-gray-50   text-text text-sm rounded outline-none w-full p-2.5 my-1 " placeholder="can you add mosquito net ?" required />                            
-                        <button type="submit" class="bg-main text-white text-sm font-bold rounded outline-none w-full p-2.5 my-1 hover:bg-text hover:text-white">Submit</button>
+                  <form className=' md:w-96 w-full  bg-text rounded shadow-md'>
+                    <div className='flex flex-col drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] p-3'>                                        
+                        <input type="email" name="email" id="email" class="bg-gray-50 text-black text-base rounded outline-none w-full p-2.5 my-1 " placeholder="name@company.com" required />  
+                        <textarea type="text" name="email" id="email" class="bg-gray-50 text-text text-sm rounded outline-none w-full p-2.5 my-1 " placeholder="can you add mosquito net ?" required />                            
+                        <button type="submit" class="bg-main text-white text-sm font-bold rounded outline-none w-full p-2.5 my-1 hover:bg-transparent  hover:border hover:border-main hover:text-white">Submit</button>
                     </div>
                   </form>
                 
