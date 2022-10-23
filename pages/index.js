@@ -12,6 +12,8 @@ import Testimonial from '../components/common/testimonial';
 import FotterPart from '../components/common/footer';
 import Subscription from '../components/home/subscription';
 import GetInTouch from '../components/home/getInTouch';
+import CountupClient from '../components/home/countup';
+import ReservForm from '../components/common/reservForm';
  
 
 export default function Home() {
@@ -32,9 +34,19 @@ export default function Home() {
     <HeroSection 
     Title={'Welcome to the new era of digital Five Star Hotel'}
     subtitle={'A Memorable Experience.'}
-    btnTitle={"Explore Now"}
-    imgcls={'bg-hero'}
+    btnTitle={"Book Exclusive Villa's"}
+    imgcls={'bg-hero'}    
+    otherComponent={
+      <div className='container pt-3'>
+      <ReservForm 
+      css={'border-2 border-white text-white'}
+      />
+    </div>
+    }
     />
+    {/* <div className='container pt-3'>
+      <ReservForm />
+    </div> */}
     <div
     className='container py-5 md:py-20'
     >
@@ -68,7 +80,10 @@ export default function Home() {
         <h1 className='text-center section-title'><span>Our</span>Galleries</h1>
         <OurGellary />
     </div>
-
+    <div className='container py-5'>
+       {/* <h1 className='text-center section-title'>CLIENT<span>STATICS</span></h1> */}
+       <CountupClient />
+    </div>
     <div className='container py-5'>
     <h1 className='text-center section-title'>CLIENT <span>Spech</span></h1>
         <Testimonial />

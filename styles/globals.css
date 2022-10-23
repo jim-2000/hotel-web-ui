@@ -9,6 +9,9 @@
 
 /* base layer  */
 @layer base {
+    body{
+        overflow-x: hidden;
+    }
   /* ... */
   h1 {
     @apply text-4xl font-bold;
@@ -36,7 +39,7 @@
 @layer components {
     /* ============ Screen =============== */
     .container {
-        @apply mx-auto px-4 ;        
+        @apply mx-auto px-4;        
     }
     .container-full {
         @apply w-full;        
@@ -44,10 +47,23 @@
     .grid-two{
         @apply grid ;
     }
+    .active-nav{
+        color: #9B51E0;
+        font-weight: 800;
+        
+    }
     
  
     /* ============ Card=============== */
  
+.hotel-cover {
+	background-image: url(https://www.citystyleandliving.com/wordpress/wp-content/uploads/2019/01/outside.jpg);
+}
+
+.bg-gradient-black-transparent {
+	background: rgb(0,0,0);
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
 
 
     /* ============ button=============== */
@@ -55,13 +71,21 @@
           @apply px-4 py-2 text-sm  font-semibold
           outline-none;     
     } 
+    .btn-primary {
+        @apply bg-main text-white rounded-md hover:bg-white hover:text-main border border-main;
+        letter-spacing: 1px;
+    }
+   .btn-primary-outline{
+    @apply bg-main px-10 text-white btn hover:bg-transparent hover:border hover:text-text;
+   }
     .btn-primary-circle {
         @apply bg-purple-600 text-white transition duration-150 ease-in-out  rounded-full hover:ring-2 hover:ring-purple-600 hover:ring-offset-2;
                
     }
     .btn-secondary {
-        @apply bg-purple-200 text-purple-600 text-sm font-semibold ;
+        @apply  text-white text-sm font-semibold uppercase ;
     }
+
     /* animation btn and text  */
     .btn-animate {
         @apply transition duration-150 ease-in-out;
@@ -74,6 +98,11 @@
     }
     .btn-animate:active {
         @apply transform scale-95;
+    }
+    .btn-secondary:hover {
+        @apply bg-purple-600 text-white uppercase;
+        letter-spacing: 2px;
+        
     }
     /* gradinet buttn   */
 
@@ -181,6 +210,13 @@
         letter-spacing: 0.025em;
         @apply text-text;
      }
+     .footer-li{
+        @apply font-bold text-sm text-main hover:text-white hover:underline hover:font-semibold hover:transition hover:cursor-pointer duration-150 ease-in-out ;
+        
+     }
+        .footer-li:hover{
+            letter-spacing: 1px;
+        }
 }
 
 

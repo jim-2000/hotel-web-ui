@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { IoMdList,IoIosClose,IoLogoFacebook,IoLogoInstagram,IoLogoTwitter } from "react-icons/io";
+import Link from 'next/link'
 const Header = () => {
     const [isOpen, setisOpen] = useState(false)
     // <ion-icon name="list-circle-outline"></ion-icon> 
@@ -8,21 +9,26 @@ const Header = () => {
         console.log(isOpen);
     }
  
-    
+    // const navigaton = useNavigate();
   return (
     <div className=''>
         <nav className=' px-5 py-2 bg-white backdrop-blur-lg shadow-lg md:flex md:justify-between md:items-center'>
             <div className='flex  cursor-pointer justify-between items-center'>
-                <div className='flex'>
-                    <img
-                    src="https://flowbite.com/docs/images/logo.svg"
-                    className="mr-3 h-6 sm:h-9"
-                    alt="Logo"
-                    />
-                    <span className="self-center whitespace-nowrap text-sm font-bold text-main text-animate-income ">
-                    HOTEL SEA FALL
-                    </span>
-                </div>
+                <Link href='/'  >
+                    <div className='flex'>
+                        <img
+                        src="https://flowbite.com/docs/images/logo.svg"
+                        className="mr-3 h-6 sm:h-9 cursor-pointer"
+                        alt="Logo"
+                        onClick={() => {
+
+                        }}
+                        />
+                        <span className="self-center whitespace-nowrap text-sm font-bold text-main text-animate-income ">
+                        HOTEL SEA FALL
+                        </span>
+                    </div>
+                </Link>
           
               <div className='block md:hidden md:opacity-0 opacity-100 '>
                     {
@@ -58,6 +64,7 @@ const Header = () => {
                 <li className='mx-1 my-6 md:my-0 md:mx-2 hover:bg-slate-300 md:hover:bg-transparent '>
                     <a href="/room" className='text-text text-sm mr-1 font-semibold transition-all ease-in   duration-0 hover:duration-500 hover:text-main hover:font-bold hover:text-base hover:tracking-widest  '>Rooms</a>
                 </li>
+                
                 <li className='mx-1 my-6 md:my-0 md:mx-2 hover:bg-slate-300 md:hover:bg-transparent'>
                     <a href="/facilities" className='text-text text-sm mr-1 font-semibold transition-all ease-in   duration-0 hover:duration-500 hover:text-main hover:font-bold hover:text-base hover:tracking-widest  '>Facilities</a>
                 </li>
@@ -65,13 +72,15 @@ const Header = () => {
                     <a href="/contact" className='text-text text-sm mr-1 font-semibold transition-all ease-in   duration-0 hover:duration-500 hover:text-main hover:font-bold hover:text-base hover:tracking-widest  '>Contacts</a>
                 </li>
                 <li className=' mx-1 my-6 md:my-0 md:mx-2 hover:bg-slate-300 md:hover:bg-transparent'>
-                    <a href="" className='text-text text-sm mr-1 font-semibold transition-all ease-in   duration-0 hover:duration-500 hover:text-main hover:font-bold hover:text-base hover:tracking-widest'>Offers</a>
+                    <a href="/offers" className='text-text text-sm mr-1 font-semibold transition-all ease-in   duration-0 hover:duration-500 hover:text-main hover:font-bold hover:text-base hover:tracking-widest'>Villa's</a>
                 </li>
-                <li className='mx-1 my-2 md:my-0 md:mx-2 hover:bg-slate-300 md:hover:bg-transparent'>
-                    <a href="" className=' text-text text-sm mr-1 font-semibold transition-all ease-in   duration-0 hover:duration-500 hover:text-main hover:font-bold hover:text-base hover:tracking-widest  '>Events</a>
-                  
-                </li>                 
-                 <button className='my-4 md:my-0 btn btn-primary-circle hover:shadow  btn-animate'>Book NOW</button>
+                <li className=' mx-1 my-6 md:my-0 md:mx-2 hover:bg-slate-300 md:hover:bg-transparent'>
+                    <a href="/offers" className='text-text text-sm mr-1 font-semibold transition-all ease-in   duration-0 hover:duration-500 hover:text-main hover:font-bold hover:text-base hover:tracking-widest'>Sign up</a>
+                </li>
+                                
+                    {/* <Link href='/booking'> */}
+                     <a href='/booking' className='my-4 md:my-0 btn btn-primary-circle hover:shadow  btn-animate' >Book NOW</a>
+                    {/* </Link> */}
             </ul>
              {/* social icons  */}
             <div className='hidden  lg:flex'>

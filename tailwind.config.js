@@ -61,11 +61,14 @@ module.exports = {
         about: "linear-gradient(rgba(0, 0, 0, 0.5), rgb(32, 33, 36) ), url('/imgs/bg1.jpg')",
         room: "linear-gradient(rgba(0, 0, 0, 0.5), rgb(32, 33, 36) ), url('/imgs/room.jpg')",
         facilities: "linear-gradient(rgba(0, 0, 0, 0.5), rgb(32, 33, 36) ), url('/imgs/facilities.jpg')",
+        offer: "linear-gradient(rgba(0, 0, 0, 0.5), rgb(32, 33, 36) ), url('/imgs/offers.jpg')",
         footer: "url('/images/footer/bg.svg')",
       },
     },
    
   },
   variants: {},
-  plugins: [ ],
+  plugins: [ 
+    require('@tailwindcss/forms'),
+  ],
 }

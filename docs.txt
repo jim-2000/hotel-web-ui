@@ -1,0 +1,15 @@
+Google Fonts : Krub
+Font Awesome :Click to See
+Images : Pexels.com
+Next Js: https://getbootstrap.com/
+Node Sass:Click to see
+React Bootstrap Click to See
+React Count Up Click to See
+React Google Re-captchaClick to See
+React Modal VideoClick to See
+React Range SliderClick to See
+React Scroll to topClick to See
+React SlickClick to See
+React Visibility SensorClick to See
+React Slick CarouselClick to See
+React wow animation https://www.npmjs.com/package/react-wow
