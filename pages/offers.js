@@ -28,6 +28,7 @@ const Offers = () => {
               [1,2,3,4,5,6].map((item, index) => (
                 <>
                   <SpecialOffer 
+                  key={index}
                     Title={"10% off on all services"}
                     subtitle={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
                     imgcls={item %2 !=0 ? 'bg-room': 'bg-offer'}
