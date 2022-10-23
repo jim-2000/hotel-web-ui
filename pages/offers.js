@@ -22,7 +22,7 @@ const Offers = () => {
         />
       
         <div className='container py-3 md:py-5 '>
-           <h1 className='text-center section-title'><span>Villa's</span>offer</h1>
+           <h1 className='text-center section-title'><span>{`Villa's`}</span>offer</h1>
             
             {
               [1,2,3,4,5,6].map((item, index) => (
