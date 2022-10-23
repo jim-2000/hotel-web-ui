@@ -13,7 +13,7 @@ const ConfirmModal = () => {
     useEffect(() => {
         // re render the component
         setBooking({ ...booking })
-    }, [])
+    })
 
   return (
     <div>

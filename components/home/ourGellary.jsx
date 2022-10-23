@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Pagination, Navigation } from "swiper";
+import Image from "next/image";
 
 //
 const OurGellary = () => {
@@ -28,8 +29,10 @@ const OurGellary = () => {
       >
          {
           [1,2,3,4,5,6,7,8,9,10].map((item, index) => (
-            <SwiperSlide className="h-[300px] md:h-96 bg-slate-600" index={index}>
-              <img 
+            <SwiperSlide className="h-[300px] md:h-96 bg-slate-600" key={index}>
+              <Image
+
+               layout="fill"
               src="/imgs/room.jpg"
               className="h-full w-full object-cover"
               />

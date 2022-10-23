@@ -6,8 +6,12 @@ const nextConfig = {
 module.exports = {
   ...nextConfig,
   images: {
-    domains: ['placeimg.com','mdbcdn.b-cdn.net'],
+    domains: ['placeimg.com','mdbcdn.b-cdn.net','mdbootstrap.com'],
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  }
+
 }
 
 // module.exports = nextConfig

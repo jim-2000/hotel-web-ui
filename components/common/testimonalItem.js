@@ -1,12 +1,19 @@
+import Image from 'next/image'
 import React from 'react'
 
 const TestimonalItem = () => {
   return (
     <div class="bg-transparent p-4 flex flex-col item-center justify-center w-full">
-      <img class="rounded-full shadow-lg mb-6 mx-auto"
+     <div className='flex justify-center items-center'>
+     <Image
+        width={150}
+        height={150}
+        layout='fixed'
+        class="rounded-full shadow-lg mb-6 mx-auto w-24 h-24"
         src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" 
-        alt="avatar" style={{width: '150px'}}
+        // alt="avatar" style={{width: '150px'}}
       />
+     </div>
     <div class="flex flex-wrap justify-center item-center">
       <div class="grow-0 shrink-0  space-y-2 text-center w-full lg:w-8/12 px-3">
       <h5 className="text-xl font-extrabold text-text my-5 "><span className="text-text">Maria</span> Keti</h5>  

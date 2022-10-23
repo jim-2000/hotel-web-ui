@@ -64,7 +64,7 @@ const Header = () => {
             `}>
                 {
                     navlinks.map((item, index) => (
-                        <Link href={item.href}>
+                        <Link href={item.href} key={index}>
                         <li className='mx-1 my-6 md:my-0 md:mx-2 hover:bg-slate-300 md:hover:bg-transparent '>
                             <a href="/room" className='text-text text-sm mr-1 font-semibold transition-all ease-in   duration-0 hover:duration-500 hover:text-main hover:font-bold hover:text-base hover:tracking-widest  '>{item.name}</a>
                         </li>
@@ -92,7 +92,7 @@ const Header = () => {
                 </li> */}
                                 
                     <Link href='/booking'>
-                     <a  className='my-4 md:my-0 btn btn-primary-circle hover:shadow  btn-animate' >Book NOW</a>
+                     <button  className='my-4 md:my-0 btn btn-primary-circle hover:shadow  btn-animate' >Book NOW</button>
                     </Link>
             </ul>
              {/* social icons  */}
