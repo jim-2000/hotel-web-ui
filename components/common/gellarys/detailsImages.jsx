@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React,{useCallback, useState} from 'react'
 import ImageViewer from "react-simple-image-viewer";
 
@@ -33,13 +34,17 @@ const DetailsImages = () => {
                 images.map((image, index) => (
                     <>
                      <div className={`${index } w-1/2 p-1 md:p-2`}>
-                            <img 
+                            <Image 
+                             width={300}
+                             height={300}
                             onClick={() => openImageViewer(index)}
-                            width="300"
                             key={index}
                             style={{ margin: "2px" }}
                             class="block object-cover object-center w-full h-96 md:h[280px] rounded-lg transform easy-in-out duration-500 hover:scale-105"
-                            src={image}/>
+                            
+                            src={image}
+                            />
+                            
                         </div>
                     </>
                 ))

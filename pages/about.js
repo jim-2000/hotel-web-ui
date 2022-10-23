@@ -23,7 +23,7 @@ const About = () => {
      
     <div className="container py-4 flex flex-col-reverse md:grid md:grid-cols-[3fr,1fr] gap-3">
     {/* first column    */}
-   <div className="w-full ">
+   {/* <div className="w-full ">
    {
       [1,2,3,4,5,6,7,8,9,10,11,12].map((item, index) => {
         return (
@@ -32,7 +32,7 @@ const About = () => {
       })
 
     } 
-   </div>
+   </div> */}
     {/* second column  */}
     <div className="w-full ">
     <RoomCard />  

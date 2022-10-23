@@ -20,11 +20,11 @@ const SpecialOffer = ({imgcls,Title,subtitle, css,anyComponent,isright}) => {
      `}>
          <h1 className={`text-[26px] md:text-2xl text-white text-center`} >{Title}</h1>
         <p className={`text-white text-center text-[14px] md:text-base`}>{subtitle}</p>
-        <ul class="list-disc text-white text-start text-[10px] md:text-base items-end">
+        <ul class="list-disc text-white text-start text-[10px] md:text-base items-end  ">
             <li>Free Wifi</li>
             <li>Private Pool</li>
             <li>Gymnasiam</li>
-            <li>Dines</li>
+           
         </ul>
     {
       anyComponent ? <>{anyComponent}</> : <></>

@@ -1,7 +1,11 @@
 import React, { useState } from 'react'
 import { IoMdList,IoIosClose,IoLogoFacebook,IoLogoInstagram,IoLogoTwitter } from "react-icons/io";
 import Link from 'next/link'
+import data from '../../data.json'
+
+//
 const Header = () => {
+    const [navlinks, setnavlinks] = useState(data.navData)
     const [isOpen, setisOpen] = useState(false)
     // <ion-icon name="list-circle-outline"></ion-icon> 
     const toggleNav = () => {
@@ -58,7 +62,16 @@ const Header = () => {
             transition-all ease-in duration-500
             w-full
             `}>
-                <li className='mx-1 my-6 md:my-0 md:mx-2 mt-1 md:m-0 hover:bg-slate-300 md:hover:bg-transparent ' >
+                {
+                    navlinks.map((item, index) => (
+                        <Link href={item.href}>
+                        <li className='mx-1 my-6 md:my-0 md:mx-2 hover:bg-slate-300 md:hover:bg-transparent '>
+                            <a href="/room" className='text-text text-sm mr-1 font-semibold transition-all ease-in   duration-0 hover:duration-500 hover:text-main hover:font-bold hover:text-base hover:tracking-widest  '>{item.name}</a>
+                        </li>
+                        </Link>
+                    ))
+                }
+                {/* <li className='mx-1 my-6 md:my-0 md:mx-2 mt-1 md:m-0 hover:bg-slate-300 md:hover:bg-transparent ' >
                     <a href="/" className='text-text text-sm mr-1 font-semibold transition-all ease-in   duration-0 hover:duration-500 hover:text-main hover:font-bold hover:text-base hover:tracking-widest '>Home</a>
                 </li>
                 <li className='mx-1 my-6 md:my-0 md:mx-2 hover:bg-slate-300 md:hover:bg-transparent '>
@@ -76,11 +89,11 @@ const Header = () => {
                 </li>
                 <li className=' mx-1 my-6 md:my-0 md:mx-2 hover:bg-slate-300 md:hover:bg-transparent'>
                     <a href="/offers" className='text-text text-sm mr-1 font-semibold transition-all ease-in   duration-0 hover:duration-500 hover:text-main hover:font-bold hover:text-base hover:tracking-widest'>Sign up</a>
-                </li>
+                </li> */}
                                 
-                    {/* <Link href='/booking'> */}
-                     <a href='/booking' className='my-4 md:my-0 btn btn-primary-circle hover:shadow  btn-animate' >Book NOW</a>
-                    {/* </Link> */}
+                    <Link href='/booking'>
+                     <a  className='my-4 md:my-0 btn btn-primary-circle hover:shadow  btn-animate' >Book NOW</a>
+                    </Link>
             </ul>
              {/* social icons  */}
             <div className='hidden  lg:flex'>

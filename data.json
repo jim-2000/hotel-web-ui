@@ -6,9 +6,11 @@
     },
   
     "navData": [
-      { "name": "About", "href": "/" },
-      { "name": "How to", "href": "/" },
-      { "name": "Faqs", "href": "/" }
+      { "name": "Home", "href": "/" },
+      { "name": "Rooms", "href": "/room" },
+      { "name": "Facilities", "href": "/facilities" },
+      { "name": "Contact", "href": "/contact" },
+      { "name": "Vilas", "href": "/vilas" }
     ],
   
     "heroData": {
