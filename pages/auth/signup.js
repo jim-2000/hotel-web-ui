@@ -1,5 +1,5 @@
 import React from 'react'
-import InputFiled from '../../components/common/InputFiled'
+import InputFiled from '../../components/common/inputFiled'
 
 const Signup = () => {
   return (

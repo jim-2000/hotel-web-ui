@@ -5,7 +5,7 @@ import { IoIosCalendar, IoIosClose  } from "react-icons/io";
 import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 //
-import InputFiled from '../common/InputFiled'
+import InputFiled from '../common/inputFiled'
 import { useBooking } from '../../context/DataContex';
 
 // modal config
