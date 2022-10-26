@@ -6,7 +6,7 @@ const nextConfig = {
 module.exports = {
   ...nextConfig,
   images: {
-    domains: ['placeimg.com','mdbcdn.b-cdn.net','mdbootstrap.com'],
+    domains: ['placeimg.com','mdbcdn.b-cdn.net','mdbootstrap.com','flowbite.com'],
   },
   eslint: {
     ignoreDuringBuilds: true,

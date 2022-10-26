@@ -17,7 +17,9 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    width:'60%',
+    width:'80%',
+    position:'absolute',
+  
   },
 };
 // Modal.setAppElement('#app')
@@ -50,7 +52,7 @@ const Bookingfullform = () => {
  
   
   return (
-    <div className='p-0 m-0'>
+    <div className='p-0 m-0 '>
       <div className=''>
         <ReservForm 
         hidebtn={true}
@@ -197,7 +199,7 @@ const Bookingfullform = () => {
         
       }}
       >Book Now</button>
-      <div>
+      <div className='w-full md:w-96 relative'>
             <Modal
                isOpen={modalIsOpen}
                onAfterOpen={()=>{}}

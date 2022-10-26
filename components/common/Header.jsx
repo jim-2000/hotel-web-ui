@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { IoMdList,IoIosClose,IoLogoFacebook,IoLogoInstagram,IoLogoTwitter } from "react-icons/io";
 import Link from 'next/link'
 import data from '../../data.json'
+import Image from 'next/image';
 
 //
 const Header = () => {
@@ -19,10 +20,12 @@ const Header = () => {
         <nav className=' px-5 py-2 bg-white backdrop-blur-lg shadow-lg md:flex md:justify-between md:items-center'>
             <div className='flex  cursor-pointer justify-between items-center'>
                 <Link href='/'  >
-                    <div className='flex'>
-                        <img
+                    <div className='flex cursor-pointer'>
+                        <Image
+                        height={24}
+                        width={24}
                         src="https://flowbite.com/docs/images/logo.svg"
-                        className="mr-3 h-6 sm:h-9 cursor-pointer"
+                        className="mr-3 h-6 w-6 sm:h-9 cursor-pointer"
                         alt="Logo"
                         onClick={() => {
 

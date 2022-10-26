@@ -1,6 +1,10 @@
 import React from 'react'
 import InputFiled from '../../components/common/inputFiled'
 
+export const config ={
+    unstable_runtimeJS: false
+}
+
 const Signup = () => {
   return (
     <div className='bg-hero h-screen object-cover w-full bg-cover bg-center bg-fixed

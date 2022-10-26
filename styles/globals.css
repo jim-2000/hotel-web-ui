@@ -234,7 +234,12 @@
 .swiper-button-prev:hover{
     color: #9B51E0 !important;
 }
-
+.ourGellary 
+{
+    width: 300.333px !important;
+    margin-right: 10px !important;
+    /* height: max-content !important; */
+}
 
 
 

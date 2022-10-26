@@ -1,3 +1,4 @@
+import Image from "next/image"
 import DetailsImages from "../components/common/gellarys/detailsImages"
 import Gellary from "../components/common/gellarys/gellary"
 import Header from "../components/common/Header"
@@ -20,32 +21,21 @@ const About = () => {
     btnTitle={'Get Started'}
     imgcls={'bg-about'}
     />
-     
-    <div className="container py-4 flex flex-col-reverse md:grid md:grid-cols-[3fr,1fr] gap-3">
-    {/* first column    */}
-   {/* <div className="w-full ">
-   {
-      [1,2,3,4,5,6,7,8,9,10,11,12].map((item, index) => {
-        return (
-          <RoomrowCard key={index} />
-        )
-      })
+    <div className='container py-5'>
+        <h1 className='text-3xl font-bold text-center'>About Us</h1>
+        <div className="h-64 w-60 relative">
+        <Image
+           layout='fill' 
+            src={'/imgs/room.jpg'}
+            alt='room'
+            priority
 
-    } 
-   </div> */}
-    {/* second column  */}
-    <div className="w-full ">
-    <RoomCard />  
+        />
+        <h1 className='text-3xl font-bold text-center'>About Us</h1>
+ 
+        </div>
     </div>
-     
-    </div>
-    <div className="container">
-      <Gellary />
-    </div>
-    <div className="container">
-      <h1 className='text-center section-title'><span>Our</span>Gallery</h1>
-      <DetailsImages />
-    </div>
+   
   </div> 
   )
 }

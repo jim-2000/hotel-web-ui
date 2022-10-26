@@ -1,23 +1,32 @@
 import Header from '../components/common/Header'
 import HeroSection from '../components/common/Hero'
-import Navbar from '../components/common/Navbar'
-import { IoIosArrowRoundDown, IoIosClose,  } from "react-icons/io";
+ 
 import GridTwoLayout from '../components/common/gridTwoLayout';
 import AboutHotel from '../components/home/aboutHotel';
  
-import Banner from '../components/common/banner';
-import { useState } from 'react';
-import OurGellary from '../components/home/ourGellary';
-import Testimonial from '../components/common/testimonial';
-import FotterPart from '../components/common/footer';
-import Subscription from '../components/home/subscription';
-import GetInTouch from '../components/home/getInTouch';
+// import Banner from '../components/common/banner';
+ 
+import dynamic from 'next/dynamic';
+//
+// import OurGellary from '../components/home/ourGellary';
+// import Testimonial from '../components/common/testimonial';
+// import FotterPart from '../components/common/footer';
+// import Subscription from '../components/home/subscription';
+// import GetInTouch from '../components/home/getInTouch';
 import CountupClient from '../components/home/countup';
 import ReservForm from '../components/common/reservForm';
- 
+import Image from 'next/image';
+
+// lazy load the map component
+const Banner = dynamic(() => import('../components/common/banner'), {});
+const OurGellary = dynamic(() => import('../components/home/ourGellary'), {});
+const Testimonial = dynamic(() => import('../components/common/testimonial'), {});
+const GetInTouch = dynamic(() => import('../components/home/getInTouch'), {});
+const FotterPart = dynamic(() => import('../components/common/footer'), {});
+const Subscription = dynamic(() => import('../components/home/subscription'), {});
 
 export default function Home() {
-  const [isopen, setisopen] = useState(true);
+ 
   return (
   <div className='h-screen'>
     
@@ -53,10 +62,12 @@ export default function Home() {
       <GridTwoLayout 
       firstLayout={<AboutHotel />}
       SecondLayout={
-        <div className={'img-container'}>
-           <img 
-             src={'/imgs/room.jpg'}
-              alt='room'
+        <div className={'h-64 md:h-96 w-full relative'}>
+           <Image
+            priority
+            layout='fill' 
+            src={'/imgs/room.jpg'}
+            alt='room'
            />
         </div>
       } 
