@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const InputFiled = ({title,type,value, setval, placeholder ,isrequired,onChange}) => {
   return (
-    <div className={` flex flex-col w-full  `}>
+    <div className={` flex flex-col w-full border-none `}>
       {title ? <label className='text-base font-bold text-text'>{title} {isrequired ? <span className='text-red-500'>*</span>: ''}</label> : null}  
         <input type={type} 
         onChange={setval ? (e)=> {           
@@ -12,7 +12,7 @@ const InputFiled = ({title,type,value, setval, placeholder ,isrequired,onChange}
         placeholder={placeholder} 
         required={isrequired}
         
-        className={`  border-2 border-main p-2 rounded-md font-body outline-none focus:border-main focus:ring-2 focus:ring-main focus:ring-opacity-50  `}
+        className={`  border border-text p-2 rounded-md font-body  focus:border-text    `}
          
       />
      

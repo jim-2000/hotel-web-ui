@@ -3,18 +3,20 @@ import { IoMdList,IoIosClose,IoLogoFacebook,IoLogoInstagram,IoLogoTwitter } from
 import Link from 'next/link'
 import data from '../../data.json'
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 //
 const Header = () => {
     const [navlinks, setnavlinks] = useState(data.navData)
     const [isOpen, setisOpen] = useState(false)
-    // <ion-icon name="list-circle-outline"></ion-icon> 
+ 
     const toggleNav = () => {
         setisOpen(!isOpen)
         console.log(isOpen);
     }
  
-    // const navigaton = useNavigate();
+    const router = useRouter();
+     console.log(router.pathname.slice(1));
   return (
     <div className=''>
         <nav className=' px-5 py-2 bg-white backdrop-blur-lg shadow-lg md:flex md:justify-between md:items-center'>
@@ -23,17 +25,17 @@ const Header = () => {
                     <div className='flex cursor-pointer'>
                         <Image
                         height={24}
-                        width={24}
-                        src="https://flowbite.com/docs/images/logo.svg"
+                        width={150}
+                        src="/logo.svg"
                         className="mr-3 h-6 w-6 sm:h-9 cursor-pointer"
                         alt="Logo"
                         onClick={() => {
 
                         }}
                         />
-                        <span className="self-center whitespace-nowrap text-sm font-bold text-main text-animate-income ">
+                        {/* <span className="self-center whitespace-nowrap text-sm font-bold text-main text-animate-income ">
                         HOTEL SEA FALL
-                        </span>
+                        </span> */}
                     </div>
                 </Link>
           
@@ -69,30 +71,17 @@ const Header = () => {
                     navlinks.map((item, index) => (
                         <Link href={item.href} key={index}>
                         <li className='mx-1 my-6 md:my-0 md:mx-2 hover:bg-slate-300 md:hover:bg-transparent '>
-                            <a href="/room" className='text-text text-sm mr-1 font-semibold transition-all ease-in   duration-0 hover:duration-500 hover:text-main hover:font-bold hover:text-base hover:tracking-widest  '>{item.name}</a>
+                            <a href="/room" className={`text-text text-sm mr-1 font-semibold transition-all ease-in   
+                            duration-0 hover:duration-500
+                             hover:text-main hover:font-bold 
+                             hover:text-base hover:tracking-widest
+                             focus:nav-active
+                             ${router.pathname == item.href ? 'nav-active' : '' }`}
+                             >{item.name}</a>
                         </li>
                         </Link>
                     ))
-                }
-                {/* <li className='mx-1 my-6 md:my-0 md:mx-2 mt-1 md:m-0 hover:bg-slate-300 md:hover:bg-transparent ' >
-                    <a href="/" className='text-text text-sm mr-1 font-semibold transition-all ease-in   duration-0 hover:duration-500 hover:text-main hover:font-bold hover:text-base hover:tracking-widest '>Home</a>
-                </li>
-                <li className='mx-1 my-6 md:my-0 md:mx-2 hover:bg-slate-300 md:hover:bg-transparent '>
-                    <a href="/room" className='text-text text-sm mr-1 font-semibold transition-all ease-in   duration-0 hover:duration-500 hover:text-main hover:font-bold hover:text-base hover:tracking-widest  '>Rooms</a>
-                </li>
-                
-                <li className='mx-1 my-6 md:my-0 md:mx-2 hover:bg-slate-300 md:hover:bg-transparent'>
-                    <a href="/facilities" className='text-text text-sm mr-1 font-semibold transition-all ease-in   duration-0 hover:duration-500 hover:text-main hover:font-bold hover:text-base hover:tracking-widest  '>Facilities</a>
-                </li>
-                <li className='mx-1 my-6 md:my-0 md:mx-2 hover:bg-slate-300 md:hover:bg-transparent'>
-                    <a href="/contact" className='text-text text-sm mr-1 font-semibold transition-all ease-in   duration-0 hover:duration-500 hover:text-main hover:font-bold hover:text-base hover:tracking-widest  '>Contacts</a>
-                </li>
-                <li className=' mx-1 my-6 md:my-0 md:mx-2 hover:bg-slate-300 md:hover:bg-transparent'>
-                    <a href="/offers" className='text-text text-sm mr-1 font-semibold transition-all ease-in   duration-0 hover:duration-500 hover:text-main hover:font-bold hover:text-base hover:tracking-widest'>Villa's</a>
-                </li>
-                <li className=' mx-1 my-6 md:my-0 md:mx-2 hover:bg-slate-300 md:hover:bg-transparent'>
-                    <a href="/offers" className='text-text text-sm mr-1 font-semibold transition-all ease-in   duration-0 hover:duration-500 hover:text-main hover:font-bold hover:text-base hover:tracking-widest'>Sign up</a>
-                </li> */}
+                }              
                                 
                     <Link href='/booking'>
                      <button  className='my-4 md:my-0 btn btn-primary-circle hover:shadow  btn-animate' >Book NOW</button>

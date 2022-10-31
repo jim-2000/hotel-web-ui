@@ -20,7 +20,7 @@ const ContactForm = () => {
           setval={setemail}
          />
          <textarea 
-         className='border-2 border-main p-2 rounded-md font-body h-[200px]'
+         className='border-2 border-text p-2 hover:border-text rounded-md font-body h-[200px]'
          value={msg} onChange={(e)=>{
           setmsg(e.target.value)
          }} />
@@ -33,8 +33,7 @@ const ContactForm = () => {
           <InputFiled />
           <InputFiled />            
          </div> */}
-         <button className='btn btn-primary'
-         placeholder='how can I book ?'
+         <button className='btn btn-primary w-1/2'    
          onClick={()=>{
             console.log({name:name,email:email,msg:msg});
          }}>submit</button>

@@ -14,7 +14,6 @@ const Offers = () => {
       <Head>
         <title>OFFER</title>
       </Head>
-        <Header />
         <HeroSection 
         Title={"Facilities"}
         subtitle={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
@@ -46,7 +45,6 @@ const Offers = () => {
             }
         </div>
       
-       <FotterPart />
     </div>
   )
 }

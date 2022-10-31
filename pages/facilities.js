@@ -8,7 +8,6 @@ import AboutHotel from '../components/home/aboutHotel'
 const Facilities = () => {
   return (
     <div>
-        <Header />
         <HeroSection 
         Title={"Facilities"}
         subtitle={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
@@ -71,9 +70,7 @@ const Facilities = () => {
             </div>
         </div>
 
-        <div>
-          <FotterPart />
-        </div>
+      
     </div>
   )
 }

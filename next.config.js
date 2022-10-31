@@ -3,7 +3,8 @@ const nextConfig = {
   reactStrictMode: false,
   swcMinify: true,
 }
-module.exports = {
+ 
+module.exports = ({
   ...nextConfig,
   images: {
     domains: ['placeimg.com','mdbcdn.b-cdn.net','mdbootstrap.com','flowbite.com'],
@@ -12,6 +13,6 @@ module.exports = {
     ignoreDuringBuilds: true,
   }
 
-}
+});
 
 // module.exports = nextConfig

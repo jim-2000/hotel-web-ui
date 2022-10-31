@@ -23,7 +23,6 @@ const Booking = () => {
           <link rel="icon" href="/favicon.ico" />
            <meta title="gkj" />
         </Head>
-        <Header />
         
         <div className=' '>
         <div className='container py-5 '>
@@ -38,7 +37,7 @@ const Booking = () => {
 
                </div>
                 {/* column2  */}
-                <div className='  px-4 py-3   w-60 flex-col items-start space-y-1'>
+                <div className='  px-4 py-3 shadow-lg static w-60 flex-col items-start space-y-1'>
                     <Bookingdetails />
                     <hr className='divide-x-2 mt-1'/>     
                     <div className='py-2  space-y-1'>
@@ -54,7 +53,6 @@ const Booking = () => {
             </div>
         </div>
         </div>
-      <FotterPart />
     </div>
   )
 }

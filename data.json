@@ -1,10 +1,5 @@
 {
-    "headerData": {
-      "logoImgV1": "/images/header/logoV1.svg",
-      "logoImgV2": "/images/header/logoV2.svg",
-      "btnText": "Contact us"
-    },
-  
+     
     "navData": [
       { "name": "Home", "href": "/" },
       { "name": "Rooms", "href": "/room" },
@@ -13,27 +8,11 @@
       { "name": "Vilas", "href": "/vilas" }
     ],
   
-    "heroData": {
-      "title": "Your awesome traffic permit consultant.",
-      "sceneImg": "/images/hero/scene.svg",
-      "boyImg": "/images/hero/boy.svg",
-      "girlImg": "/images/hero/girl.svg",
-      "truckImg": "/images/hero/truck.svg",
-      "btnText": "Get Started"
-    },
+     
   
-    "aboutData": {
-      "title": "About us",
-      "subtitle": "The occupational traffic permit is one of the most important things in the company when carrying out freight transport.  In fact, it is a prerequisite for doing business traffic at all.",
-      "text": "How do you do when you need to obtain a commercial traffic permit for freight transport to your business?",
-      "boyImg": "/images/about/boy.svg"
-    },
+    
   
-    "howData": {
-      "title": "How to apply",
-      "subtitle": "When applying for a traffic permit, there are certain requirements that you must meet that are included in the examination: requirements for professional knowledge, solid establishment, good reputation and financial resources. Important to remember is to confirm your application for a traffic permit by the company's company signer or CEO.",
-      "girlImg": "/images/how/girl.svg"
-    },
+     
   
     "faqData": {
       "pretitle": "faq",
@@ -143,5 +122,652 @@
         "placeholderEmail": "Your email adddress",
         "btnText": "Get Started"
       }
-    }
+    },
+    "roomData":[
+      {
+        "name":"Deluxe Room",
+        "branch":1,
+        "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit… Zril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur.",
+        "price":"200",
+        "image":"/imgs/room/room1.jpg",
+        "features":[
+          "Lorem ipsum dolor sit amet",
+          "Consectetuer adipiscing elit",
+          "Sed diam nonummy nibh euismod",
+          "Tincidunt ut laoreet dolore magna",
+          "Aliquam erat volutpat"
+        ],
+        "amenities":[
+          "Lorem ipsum dolor sit amet",
+          "Consectetuer adipiscing elit",
+          "Sed diam nonummy nibh euismod",
+          "Tincidunt ut laoreet dolore magna",
+          "Aliquam erat volutpat"
+        ],
+        "gallery":[
+          "/imgs/room/room1.jpg",
+          "/imgs/room/room2.jpg",
+          "/imgs/room/room3.jpg",
+          "/imgs/room/room4.jpg",
+          "/imgs/room/room5.jpg",
+          "/imgs/room/room6.jpg"
+        ],
+        "unavailable":[
+            "2022-10-25",
+            "2022-10-27",
+            "2022-10-30"
+          
+        ],
+        "maxGuests":2,
+        "size":"42 m2",
+        "bedTipe":"double",
+        "minBookingNight":"2",
+        "room_service":[
+          {
+            "iswifi":false            
+          },
+          {
+            "isac":true
+          },
+          {
+            "isbreakfast":true
+          },
+          {
+            "Sauna":true
+          },
+          {
+            "isgym":true
+          },
+          {
+            "ispool":true
+          },
+          {
+            "isbar":true
+          },
+          {
+            "islaundry":true
+          },
+          {
+            "isrestaurant":true
+          },
+          {
+            "isTv":true
+          },
+          {
+            "isAircondition":true
+          },
+          {
+            "isgarden":true
+          },
+          {
+            "isbalcony":true
+          },
+          {
+            "isview":true
+          },
+          {
+            "isgarden":true
+          },
+          {
+            "isbalcony":true
+          },
+          {
+            "isCoffeeMaker":true
+          }
+         
+        ],
+        "roomAditionalService":[
+          {
+            "name":"Massage & Spa"
+          },
+          {
+            "name":"Airport Pickup"
+          },
+          {
+            "name":"Sightseeing Tour"
+          },
+          {
+            "name":"Massage & Spa"
+          }
+        ],
+        "review":[
+          {
+            "name":"John Doe",
+            "thumb":"/images/review/thumb1.jpg",
+            "date":"12/12/2019",
+            "msg":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+          },
+          {
+            "name":"John Doe",
+            "thumb":"/images/review/thumb1.jpg",
+            "date":"12/12/2019",
+            "msg":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+          },
+          {
+            "name":"John Doe",
+            "thumb":"/images/review/thumb1.jpg",
+            "date":"12/12/2019",
+            "msg":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+          }
+        ]
+      },
+      {
+        "name":"Deluxe Room",
+        "branch":2,
+        "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit… Zril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur.",
+        "price":"200",
+        "image":"/imgs/room/room2.jpg",
+        "features":[
+          "Lorem ipsum dolor sit amet",
+          "Consectetuer adipiscing elit",
+          "Sed diam nonummy nibh euismod",
+          "Tincidunt ut laoreet dolore magna",
+          "Aliquam erat volutpat"
+        ],
+        "amenities":[
+          "Lorem ipsum dolor sit amet",
+          "Consectetuer adipiscing elit",
+          "Sed diam nonummy nibh euismod",
+          "Tincidunt ut laoreet dolore magna",
+          "Aliquam erat volutpat"
+        ],
+        "gallery":[
+          "/imgs/room/room1.jpg",
+          "/imgs/room/room2.jpg",
+          "/imgs/room/room3.jpg",
+          "/imgs/room/room4.jpg",
+          "/imgs/room/room5.jpg",
+          "/imgs/room/room6.jpg"
+        ],
+        "unavailable":[
+            "2022-10-01",
+            "2022-10-20",
+            "2022-10-30",
+            "2022-11-01",
+            "2022-11-10",
+            "2022-11-15"
+        ],
+        "maxGuests":2,
+        "size":"50 m2",
+        "bedTipe":"King",
+        
+        "minBookingNight":"1",
+        "room_service":[
+          {
+            "iswifi":true            
+          },
+          {
+            "isac":true
+          },
+          {
+            "isbreakfast":true
+          },
+          {
+            "Sauna":true
+          },
+          {
+            "isgym":true
+          },
+          {
+            "ispool":true
+          },
+          {
+            "isbar":true
+          },
+          {
+            "islaundry":true
+          },
+          {
+            "isrestaurant":true
+          },
+          {
+            "isTv":true
+          },
+          {
+            "isAircondition":true
+          },
+          {
+            "isgarden":true
+          },
+          {
+            "isbalcony":true
+          },
+          {
+            "isview":true
+          },
+          {
+            "isgarden":true
+          },
+          {
+            "isbalcony":true
+          },
+          {
+            "isCoffeeMaker":true
+          }
+         
+        ],
+        "roomAditionalService":[
+          {
+            "name":"Massage & Spa"
+          },
+          {
+            "name":"Airport Pickup"
+          },
+          {
+            "name":"Sightseeing Tour"
+          },
+          {
+            "name":"Massage & Spa"
+          }
+        ],
+        "review":[
+          {
+            "name":"John Doe",
+            "thumb":"/images/review/thumb1.jpg",
+            "date":"12/12/2019",
+            "msg":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+          },
+          {
+            "name":"John Doe",
+            "thumb":"/images/review/thumb1.jpg",
+            "date":"12/12/2019",
+            "msg":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+          },
+          {
+            "name":"John Doe",
+            "thumb":"/images/review/thumb1.jpg",
+            "date":"12/12/2019",
+            "msg":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+          }
+        ]
+      },
+      {
+        "name":"Deluxe Room",
+        "branch":2,
+
+        "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit… Zril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur.",
+        "price":"200",
+        "image":"/imgs/room/room3.jpg",
+        "features":[
+          "Lorem ipsum dolor sit amet",
+          "Consectetuer adipiscing elit",
+          "Sed diam nonummy nibh euismod",
+          "Tincidunt ut laoreet dolore magna",
+          "Aliquam erat volutpat"
+        ],
+        "amenities":[
+          "Lorem ipsum dolor sit amet",
+          "Consectetuer adipiscing elit",
+          "Sed diam nonummy nibh euismod",
+          "Tincidunt ut laoreet dolore magna",
+          "Aliquam erat volutpat"
+        ],
+        "gallery":[
+          "/imgs/room/room1.jpg",
+          "/imgs/room/room2.jpg",
+          "/imgs/room/room3.jpg",
+          "/imgs/room/room4.jpg",
+          "/imgs/room/room5.jpg",
+          "/imgs/room/room6.jpg"
+        ],
+        "unavailable":[
+            "2022-10-01",
+            "2022-10-20",
+            "2022-10-30",
+            "2022-11-01",
+            "2022-11-10",
+            "2022-11-15"
+        ],
+        "maxGuests":2,
+        "size":"42 m2",
+        "bedTipe":"Single",
+        "minBookingNight":"1",
+        "room_service":[
+          {
+            "iswifi":true            
+          },
+          {
+            "isac":true
+          },
+          {
+            "isbreakfast":true
+          },
+          {
+            "Sauna":true
+          },
+          {
+            "isgym":true
+          },
+          {
+            "ispool":true
+          },
+          {
+            "isbar":true
+          },
+          {
+            "islaundry":true
+          },
+          {
+            "isrestaurant":true
+          },
+          {
+            "isTv":true
+          },
+          {
+            "isAircondition":true
+          },
+          {
+            "isgarden":true
+          },
+          {
+            "isbalcony":true
+          },
+          {
+            "isview":true
+          },
+          {
+            "isgarden":true
+          },
+          {
+            "isbalcony":true
+          },
+          {
+            "isCoffeeMaker":true
+          }
+         
+        ],
+        "roomAditionalService":[
+          {
+            "name":"Massage & Spa"
+          },
+          {
+            "name":"Airport Pickup"
+          },
+          {
+            "name":"Sightseeing Tour"
+          },
+          {
+            "name":"Massage & Spa"
+          }
+        ],
+        "review":[
+          {
+            "name":"John Doe",
+            "thumb":"/images/review/thumb1.jpg",
+            "date":"12/12/2019",
+            "msg":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+          },
+          {
+            "name":"John Doe",
+            "thumb":"/images/review/thumb1.jpg",
+            "date":"12/12/2019",
+            "msg":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+          },
+          {
+            "name":"John Doe",
+            "thumb":"/images/review/thumb1.jpg",
+            "date":"12/12/2019",
+            "msg":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+          }
+        ]
+      },
+      {
+        "name":"Deluxe Room",
+        "branch":1,
+        "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit… Zril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur.",
+        "price":"200",
+        "image":"/imgs/room/room4.jpg",
+        "features":[
+          "Lorem ipsum dolor sit amet",
+          "Consectetuer adipiscing elit",
+          "Sed diam nonummy nibh euismod",
+          "Tincidunt ut laoreet dolore magna",
+          "Aliquam erat volutpat"
+        ],
+        "amenities":[
+          "Lorem ipsum dolor sit amet",
+          "Consectetuer adipiscing elit",
+          "Sed diam nonummy nibh euismod",
+          "Tincidunt ut laoreet dolore magna",
+          "Aliquam erat volutpat"
+        ],
+        "gallery":[
+          "/imgs/room/room1.jpg",
+          "/imgs/room/room2.jpg",
+          "/imgs/room/room3.jpg",
+          "/imgs/room/room4.jpg",
+          "/imgs/room/room5.jpg",
+          "/imgs/room/room6.jpg"
+        ],
+        "unavailable":[
+            "2022-10-01",
+            "2022-10-20",
+            "2022-10-30",
+            "2022-11-01",
+            "2022-11-10",
+            "2022-11-15"
+        ],
+        "maxGuests":2,
+        "size":"42 m2",
+        "bedTipe":"Single",
+        "minBookingNight":"1",
+        "room_service":[
+          {
+            "iswifi":true            
+          },
+          {
+            "isac":true
+          },
+          {
+            "isbreakfast":true
+          },
+          {
+            "Sauna":true
+          },
+          {
+            "isgym":true
+          },
+          {
+            "ispool":true
+          },
+          {
+            "isbar":true
+          },
+          {
+            "islaundry":true
+          },
+          {
+            "isrestaurant":true
+          },
+          {
+            "isTv":true
+          },
+          {
+            "isAircondition":true
+          },
+          {
+            "isgarden":true
+          },
+          {
+            "isbalcony":true
+          },
+          {
+            "isview":true
+          },
+          {
+            "isgarden":true
+          },
+          {
+            "isbalcony":true
+          },
+          {
+            "isCoffeeMaker":true
+          }
+         
+        ],
+        "roomAditionalService":[
+          {
+            "name":"Massage & Spa"
+          },
+          {
+            "name":"Airport Pickup"
+          },
+          {
+            "name":"Sightseeing Tour"
+          },
+          {
+            "name":"Massage & Spa"
+          }
+        ],
+        "review":[
+          {
+            "name":"John Doe",
+            "thumb":"/images/review/thumb1.jpg",
+            "date":"12/12/2019",
+            "msg":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+          },
+          {
+            "name":"John Doe",
+            "thumb":"/images/review/thumb1.jpg",
+            "date":"12/12/2019",
+            "msg":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+          },
+          {
+            "name":"John Doe",
+            "thumb":"/images/review/thumb1.jpg",
+            "date":"12/12/2019",
+            "msg":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+          }
+        ]
+      },
+      {
+        "name":"Deluxe Room",
+        "branch":3,
+        "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit… Zril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur.",
+        "price":"200",
+        "image":"/imgs/room/room1.jpg",
+        "features":[
+          "Lorem ipsum dolor sit amet",
+          "Consectetuer adipiscing elit",
+          "Sed diam nonummy nibh euismod",
+          "Tincidunt ut laoreet dolore magna",
+          "Aliquam erat volutpat"
+        ],
+        "amenities":[
+          "Lorem ipsum dolor sit amet",
+          "Consectetuer adipiscing elit",
+          "Sed diam nonummy nibh euismod",
+          "Tincidunt ut laoreet dolore magna",
+          "Aliquam erat volutpat"
+        ],
+        "gallery":[
+          "/imgs/room/room1.jpg",
+          "/imgs/room/room2.jpg",
+          "/imgs/room/room3.jpg",
+          "/imgs/room/room4.jpg",
+          "/imgs/room/room5.jpg",
+          "/imgs/room/room6.jpg"
+        ],
+        "unavailable":[
+            "2022-10-01",
+            "2022-10-20",
+            "2022-10-30",
+            "2022-11-01",
+            "2022-11-10",
+            "2022-11-15"
+        ],
+        "maxGuests":2,
+        "size":"42 m2",
+        "bedTipe":"Single",
+        "minBookingNight":"1",
+        "room_service":[
+          {
+            "iswifi":true            
+          },
+          {
+            "isac":true
+          },
+          {
+            "isbreakfast":true
+          },
+          {
+            "Sauna":true
+          },
+          {
+            "isgym":true
+          },
+          {
+            "ispool":true
+          },
+          {
+            "isbar":true
+          },
+          {
+            "islaundry":true
+          },
+          {
+            "isrestaurant":true
+          },
+          {
+            "isTv":true
+          },
+          {
+            "isAircondition":true
+          },
+          {
+            "isgarden":true
+          },
+          {
+            "isbalcony":true
+          },
+          {
+            "isview":true
+          },
+          {
+            "isgarden":true
+          },
+          {
+            "isbalcony":true
+          },
+          {
+            "isCoffeeMaker":true
+          }
+         
+        ],
+        "roomAditionalService":[
+          {
+            "name":"Massage & Spa"
+          },
+          {
+            "name":"Airport Pickup"
+          },
+          {
+            "name":"Sightseeing Tour"
+          },
+          {
+            "name":"Massage & Spa"
+          }
+        ],
+        "review":[
+          {
+            "name":"John Doe",
+            "thumb":"/images/review/thumb1.jpg",
+            "date":"12/12/2019",
+            "msg":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+          },
+          {
+            "name":"John Doe",
+            "thumb":"/images/review/thumb1.jpg",
+            "date":"12/12/2019",
+            "msg":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+          },
+          {
+            "name":"John Doe",
+            "thumb":"/images/review/thumb1.jpg",
+            "date":"12/12/2019",
+            "msg":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+          }
+        ]
+      }
+    ]
   }

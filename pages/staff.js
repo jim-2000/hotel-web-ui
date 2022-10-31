@@ -6,7 +6,6 @@ import OfferCard  from '../components/offers/offerCard'
 const Staff = () => {
   return (
     <div>
-        <Header />
         <HeroSection 
         imgcls={'bg-hero'}
         Title={"OUR STAFF"}

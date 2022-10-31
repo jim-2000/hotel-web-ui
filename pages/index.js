@@ -28,7 +28,7 @@ const Subscription = dynamic(() => import('../components/home/subscription'), {}
 export default function Home() {
  
   return (
-  <div className='h-screen'>
+  <div className=''>
     
       {/* Header alerts for 5 seconds */}
     {/* <div className={`  bg-fuchsia-500 ${isopen ? 'flex justify-between items-center' : 'hidden'} px-4`}>
@@ -39,7 +39,6 @@ export default function Home() {
                 onClick={ ()=>setisopen(false)}
             />
     </div> */}
-    <Header />
     <HeroSection 
     Title={'Welcome to the new era of digital Five Star Hotel'}
     subtitle={'A Memorable Experience.'}
@@ -48,7 +47,7 @@ export default function Home() {
     otherComponent={
       <div className='container pt-3'>
       <ReservForm 
-      css={'border-2 border-white text-white'}
+      css={'border-2 border-white text-white'}    
       />
     </div>
     }
@@ -104,10 +103,7 @@ export default function Home() {
     </div>
     <div className=''>
       <Subscription />
-    </div>
-    <div className='w-full bg-text'>
-      <FotterPart />
-    </div>
+    </div>    
   </div> 
 )
 }

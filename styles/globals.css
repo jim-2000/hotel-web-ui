@@ -1,3 +1,4 @@
+@import url('./calender.module.css');
 @import url('./animation.module.css');
 @import url('./responsive.css');
 @import url('./custombt.css');
@@ -193,7 +194,10 @@
 
 /* utilitis layout  */
 @layer utilities {
-   
+   .nav-active{
+    @apply text-main tracking-widest;
+    font-weight: 800;    
+   }
     .title{
         @apply text-4xl font-bold text-center ;
     }
@@ -211,8 +215,10 @@
         @apply text-text;
      }
      .footer-li{
-        @apply font-bold text-sm text-main hover:text-white hover:underline hover:font-semibold hover:transition hover:cursor-pointer duration-150 ease-in-out ;
-        
+        @apply font-bold text-sm text-main hover:text-white hover:underline hover:font-semibold hover:transition hover:cursor-pointer duration-150 ease-in-out ;        
+     }
+     .footer-li span {
+        @apply text-white hover:text-main;
      }
         .footer-li:hover{
             letter-spacing: 1px;
@@ -240,7 +246,9 @@
     margin-right: 10px !important;
     /* height: max-content !important; */
 }
-
+.carousel.carousel-slider .control-arrow:hover{
+    background-color: transparent !important;
+}
 
 
 

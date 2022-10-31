@@ -11,5 +11,5 @@ React Range SliderClick to See
 React Scroll to topClick to See
 React SlickClick to See
 React Visibility SensorClick to See
-React Slick CarouselClick to See
+React Slick Carousel Click to See
 React wow animation https://www.npmjs.com/package/react-wow
