@@ -16,7 +16,6 @@ const Header = () => {
     }
  
     const router = useRouter();
-     console.log(router.pathname.slice(1));
   return (
     <div className=''>
         <nav className=' px-5 py-2 bg-white backdrop-blur-lg shadow-lg md:flex md:justify-between md:items-center'>
