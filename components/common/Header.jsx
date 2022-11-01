@@ -21,10 +21,9 @@ const Header = () => {
         <nav className=' px-5 py-2 bg-white backdrop-blur-lg shadow-lg md:flex md:justify-between md:items-center'>
             <div className='flex  cursor-pointer justify-between items-center'>
                 <Link href='/'  >
-                    <div className='flex cursor-pointer'>
+                    <div className='flex cursor-pointer w-24 md:w-32 h-10 relative'>
                         <Image
-                        height={24}
-                        width={150}
+                        layout='fill'
                         src="/logo.svg"
                         className="mr-3 h-6 w-6 sm:h-9 cursor-pointer"
                         alt="Logo"

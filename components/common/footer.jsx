@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import React from 'react'
 import { IoIosArrowForward } from 'react-icons/io';
+import data from '../../data.json'
 
 const FotterPart = () => {
-//
+  const [footerli, setfooterli] = React.useState(data.FooterData)
 
 
   //
@@ -24,11 +25,14 @@ const FotterPart = () => {
         <div className="flex flex-col item-center justify-center">
           <ul className='space-y-2'>
             
-             <FooterLink title='Stafs' link='/'/>
-             <FooterLink title='About' link='/'/>
+             
+             {
+                footerli.map((item, index) => <FooterLink title={item.name} link={item.href}/>)
+             }
+             {/* <FooterLink title='About' link='/'/>
              <FooterLink title='Term & condition' link='/'/>
              <FooterLink title='Job' link='/'/>
-             <FooterLink title='Notice' link='/'/>            
+             <FooterLink title='Notice' link='/'/>             */}
       
           </ul>
         </div>

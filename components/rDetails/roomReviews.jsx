@@ -5,15 +5,25 @@ import { IoIosStarHalf, IoIosStarOutline } from 'react-icons/io'
 const RoomReviews = () => {
   return (
     <>
-        <div className='flex   p-2 gap-2'>
-            <div className='w-24 h-20 relative'>
+        <div className='flex items-center  p-2 gap-2'>
+            <div className='hidden md:block md:w-24 md:h-14 lg:w-20 lg:h-20 relative rounded-full ring-4 ring-tex'>
                 <Image 
                 src={'/imgs/review/thumb1.jpg'}
                 layout='fill'
-                className=' rounded-full object-cover'
+                className='max-w-full h-auto rounded-full object-cover'
+                alt='review'
                 />
             </div>
-            <div className='flex flex-col justify-start items-start flex-wrap space-y-1 py-2 pl-5 shadow-lg '>
+            <div className='flex flex-col justify-start items-start flex-wrap space-y-2 py-2 pl-5 shadow-lg '>
+                    <div className='block md:hidden w-20 h-20  relative  rounded-full ring-4 ring-text'>
+                        <Image 
+                        src={'/imgs/review/thumb1.jpg'}
+                        layout='fill'
+                        className='max-w-full h-auto rounded-full object-cover'
+                        alt='review'
+                        />
+
+                    </div>
                 <div className='flex items-center justify-evenly'>
                     <IoIosStarOutline
                     color='#FFC107'

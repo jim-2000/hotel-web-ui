@@ -5,7 +5,14 @@
       { "name": "Rooms", "href": "/room" },
       { "name": "Facilities", "href": "/facilities" },
       { "name": "Contact", "href": "/contact" },
-      { "name": "Vilas", "href": "/vilas" }
+      { "name": "Vilas", "href": "/vilas" }      
+    ],
+    "FooterData": [
+      { "name": "Home", "href": "/" },
+      { "name": "Rooms", "href": "/room" },
+      { "name": "Facilities", "href": "/facilities" },
+      { "name": "Contact", "href": "/contact" },
+      { "name": "Vilas", "href": "/vilas" }      
     ],
   
      

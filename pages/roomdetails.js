@@ -32,13 +32,13 @@ const Roomdetails = ({data}) => {
             </div>            
         </div>
         <div className='px-3 py-5 grid md:grid-cols-[3fr,1fr] grid-cols-1 gap-16 md:gap-1 flex-wrap'>
-            <div className='w-full '>
+            <div className='w-full -z-10 '>
                   {/* bookign image carousel  */}
-                <div className='w-full relative'>
+                <div className='w-full'>
                  <RoomCarousel />
                 </div>
                   {/* room specility   */}
-                <div className='flex     flex-wrap py-5  justify-between md:items-center'>
+                <div className='flex flex-wrap py-5  justify-between md:items-center  '>
                     <RoomSpecility />       
                 </div>
                 {/* bookign details   */}
@@ -135,27 +135,30 @@ const Roomdetails = ({data}) => {
                         </div>
                     </form>                
                 </div>
-                <div className='border border-gray w-full p-3 shadow mt-5 h-96 bg-cover bg-center relative'
-                style={{
-                    backgroundImage: `url(/imgs/room/room6.jpg)`,
-                }}
-                >
+              <div className='flex flex-wrap gap-1'>
+                <div className='border border-gray  w-1/3 md:w-full p-3 shadow mt-5 h-96 bg-cover bg-center relative'
+                    style={{
+                        backgroundImage: `url(/imgs/room/room6.jpg)`,
+                    }}
+                    >
                     <h6 className='absolute font-bold text-text'>Google Advirtisement &amp;</h6>
-                </div>
-                <div className='border border-gray w-full p-3 shadow mt-5 h-96 bg-cover bg-center relative'
-                style={{
-                    backgroundImage: `url(/imgs/room/room5.jpg)`,
-                }}
-                >
-                    <h6 className='absolute font-bold text-text'>Google Advirtisement &amp;</h6>
-                </div>
-                <div className='border border-gray w-full p-3 shadow mt-5 h-96 bg-cover bg-center relative'
-                style={{
-                    backgroundImage: `url(/imgs/room/room4.jpg)`,
-                }}
-                >
-                    <h6 className='absolute font-bold text-text'>Google Advirtisement &amp;</h6>
-                </div>
+                    </div>
+                    <div className='border border-gray  w-1/2 md:w-full p-3 shadow mt-5 h-96 bg-cover bg-center relative'
+                    style={{
+                        backgroundImage: `url(/imgs/room/room5.jpg)`,
+                    }}
+                    >
+                        <h6 className='absolute font-bold text-text'>Google Advirtisement &amp;</h6>
+                    </div>
+                    <div className='border border-gray  w-1/2 md:w-full p-3 shadow mt-5 h-96 bg-cover bg-center relative'
+                    style={{
+                        backgroundImage: `url(/imgs/room/room4.jpg)`,
+                    }}
+                    >
+                        <h6 className='absolute font-bold text-text'>Google Advirtisement &amp;</h6>
+                    </div>
+
+             </div>
             </div>
         </div>
     </div>

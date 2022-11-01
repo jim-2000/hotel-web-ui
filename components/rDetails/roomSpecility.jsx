@@ -4,7 +4,7 @@ import { IoIosBed, IoIosPeople, IoIosSquareOutline, IoMdHome } from 'react-icons
 const RoomSpecility = () => {
   return (
     <>
-    <div className='flex justify-between items-center '>
+                    <div className='flex justify-between items-center'>
                         <div className='px-2'>
                             <IoIosPeople 
                             size={26}
@@ -43,7 +43,7 @@ const RoomSpecility = () => {
                             
                         </div>
                     </div>        
-                    <div className='flex justify-between items-center '>
+                    <div className='flex justify-between items-center mr-4 '>
                         <div className='px-2'>
                             <IoIosSquareOutline 
                             size={26}

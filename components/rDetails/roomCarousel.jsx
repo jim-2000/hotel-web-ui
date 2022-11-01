@@ -14,13 +14,14 @@ const RoomCarousel = () => {
     ]
   return (
     < >
-    <Carousel
+                <Carousel
                   showThumbs={false}
-                  className='w-full h-full'
+                  className='w-full h-full -z-10'
                   autoPlay={true}
                   interval={3000}
                   infiniteLoop={true}
                   showStatus={false}
+
                   >
                      {
                             imgArry.map((item,index)=>(
